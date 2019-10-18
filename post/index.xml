@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Skwings Blog</title>
+    <link>https://skwings.github.io/post/</link>
+    <description>Recent content in Posts on Skwings Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 04 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skwings.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>apply与call的区别？</title>
+      <link>https://skwings.github.io/post/2019-10-17-call%E4%B8%8Eapply%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-17-call%E4%B8%8Eapply%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>区别？ call的性能要比apply好一些（尤其是传递给函数的参数超过三个的时候），所以后期开发的时候，可以使用call多一点。 fuction.call(obj,10,20,30); functi</description>
+    </item>
+    
+    <item>
+      <title>Js每日练习</title>
+      <link>https://skwings.github.io/post/js%E7%BB%83%E4%B9%A0/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/js%E7%BB%83%E4%B9%A0/</guid>
+      <description>练习 1.利用实现每隔10分钟刷新一次窗口 window.onload = function(){ setTnterval(fuction(){ window.location.reload() },60000) } `` 2.原型链上添加函数，实现数组去重 //第一种解决方案 Array.prototype.unnique=function(){ for(var i=0;i&amp;lt;=this.length;i++){ for(var j=i+1;j&amp;lt;this.length;j++){ if ( arr[i]===arr[j] ){ arr.spl</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://skwings.github.io/post/markdown/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/markdown/</guid>
+      <description>Markdown的超简短语法简介 标题 Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有</description>
+    </item>
+    
+    <item>
+      <title>Clean White Theme for Hugo</title>
+      <link>https://skwings.github.io/post/readme/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/readme/</guid>
+      <description>Clean White Theme for Hugo CleanWhite is a clean, elegant, but fully functional blog theme for Hugo. Here is a live demo site using this theme. It is based on huxblog Jekyll Theme and Clean Blog Jekyll Theme. These two upstream projects have done awesome jobs to create a blog theme, what I&amp;rsquo;m doing here is porting it to Hugo, of which I like the simplicity and the much faster</description>
+    </item>
+    
+    <item>
+      <title>Welcome to Zhaohuabing Blog</title>
+      <link>https://skwings.github.io/2017/11/03/hello-world/</link>
+      <pubDate>Sat, 04 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/2017/11/03/hello-world/</guid>
+      <description>“Yeah It&amp;rsquo;s on. ” Hello World!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Practice on Skwings Blog</title>
+    <link>https://skwings.github.io/categories/practice/</link>
+    <description>Recent content in Practice on Skwings Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 04 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skwings.github.io/categories/practice/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Js每日练习</title>
+      <link>https://skwings.github.io/post/js%E7%BB%83%E4%B9%A0/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/js%E7%BB%83%E4%B9%A0/</guid>
+      <description>练习 1.利用实现每隔10分钟刷新一次窗口 window.onload = function(){ setTnterval(fuction(){ window.location.reload() },60000) } `` 2.原型链上添加函数，实现数组去重 //第一种解决方案 Array.prototype.unnique=function(){ for(var i=0;i&amp;lt;=this.length;i++){ for(var j=i+1;j&amp;lt;this.length;j++){ if ( arr[i]===arr[j] ){ arr.spl</description>
+    </item>
+    
+  </channel>
+</rss>
