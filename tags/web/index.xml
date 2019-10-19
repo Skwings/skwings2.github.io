@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Skwings Blog</title>
+    <link>https://skwings.github.io/tags/web/</link>
+    <description>Recent content in Web on Skwings Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 16 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skwings.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flex布局详解</title>
+      <link>https://skwings.github.io/post/2019-10-18flex%E5%B8%83%E5%B1%80%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-18flex%E5%B8%83%E5%B1%80%E8%AF%A6%E8%A7%A3/</guid>
+      <description>Flex布局是什么？ flex是 flexible Box 的缩写，意为“弹性布局”，用来为盒状模型提供最大的灵活性。flex属性可以继承。 1. 任何一个容器都可以指定为</description>
+    </item>
+    
+  </channel>
+</rss>

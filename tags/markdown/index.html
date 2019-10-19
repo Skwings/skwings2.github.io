@@ -15,15 +15,15 @@
     
 
     
-    <meta name="title" content="apply与call的区别？" />
-    <meta property="og:title" content="apply与call的区别？" />
-    <meta property="twitter:title" content="apply与call的区别？" />
+    <meta name="title" content="Markdown" />
+    <meta property="og:title" content="Markdown" />
+    <meta property="twitter:title" content="Markdown" />
     
 
     
-    <meta name="description" content="appLy与call的区别？哪个性能更佳？">
-    <meta property="og:description" content="appLy与call的区别？哪个性能更佳？" />
-    <meta property="twitter:description" content="appLy与call的区别？哪个性能更佳？" />
+    <meta name="description" content="欢迎来到我的小屋，在这里我将会记录自己的学习历程与生活点滴，也会将自己的笔记分享出来，内容也不限于编程哦0v0。">
+    <meta property="og:description" content="欢迎来到我的小屋，在这里我将会记录自己的学习历程与生活点滴，也会将自己的笔记分享出来，内容也不限于编程哦0v0。" />
+    <meta property="twitter:description" content="欢迎来到我的小屋，在这里我将会记录自己的学习历程与生活点滴，也会将自己的笔记分享出来，内容也不限于编程哦0v0。" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="Skwings, 绯羽, Skwings blog, , 绯羽的网络日志, 绯羽的博客, 博客, 个人网站, 互联网, Web">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>apply与call的区别？-绯羽的博客 | Skwings Blog</title>
+    <title>Markdown-绯羽的博客 | Skwings Blog</title>
 
-    <link rel="canonical" href="/post/2019-10-17-call%E4%B8%8Eapply%E7%9A%84%E5%8C%BA%E5%88%AB-%E5%89%AF%E6%9C%AC/">
+    <link rel="canonical" href="/tags/markdown/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -162,45 +162,14 @@
 
 
 
-
-<style type="text/css">
-    header.intro-header {
-        background-image: url('https://img.zhaohuabing.com/in-post/2018-06-04-introducing-the-istio-v1alpha3-routing-api/background.jpg')
-    }
-</style>
-<header class="intro-header">
+<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        
-                        <a class="tag" href="/tags/javascript" title="javaScript">
-                            javaScript
-                        </a>
-                        
-                        <a class="tag" href="/tags/apply" title="apply">
-                            apply
-                        </a>
-                        
-                        <a class="tag" href="/tags/call" title="call">
-                            call
-                        </a>
-                        
-                    </div>
-                    <h1>apply与call的区别？</h1>
-                    <h2 class="subheading"></h2>
-                    <span class="meta">
-                        Posted by 
-                        
-                                &#34;SKwings&#34;
-                         
-                        on 
-                        Tuesday, June 4, 2019
-                        
-                        
-                        
-                    </span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Skwings Blog </h1>
+                    
+		    <span class="subheading">人生若只如初见，何事秋风悲画扇 </span>
                 </div>
             </div>
         </div>
@@ -209,193 +178,215 @@
 
 
 
-
-<article>
-    <div class="container">
-        <div class="row">
-
-            
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                post-container">
-
-                
-                <header>
-                    <h2>TOC</h2>
-                </header>
-                <nav id="TableOfContents">
-<ul>
-<li><a href="#区别">区别？</a>
-<ul>
-<li><a href="#call">Call()</a></li>
-<li><a href="#apply">apply()</a></li>
-</ul></li>
-</ul>
-</nav>
-                
-                
-
-<h1 id="区别">区别？</h1>
-
-<p>call的性能要比apply好一些（尤其是传递给函数的参数超过三个的时候），所以后期开发的时候，可以使用call多一点。</p>
-
-<pre><code>fuction.call(obj,10,20,30);  
-function.apply(obj,[10,20,30])//apply()传参时，以数组形式传递给对象。
-</code></pre>
-
-<h2 id="call">Call()</h2>
-
-<p>call() 方法
-call() 方法是与经典的对象冒充方法最相似的方法。它的第一个参数用作 this 的对象。其他参数都直接传递给函数自身。例如：</p>
-
-<pre><code>function sayColor(sPrefix,sSuffix) {
-    alert(sPrefix + this.color + sSuffix);
-};
-
-var obj = new Object();
-obj.color = &quot;blue&quot;;
-
-sayColor.call(obj, &quot;The color is &quot;, &quot;a very nice color indeed.&quot;);
-</code></pre>
-
-<p>在这个例子中，函数sayColor（）在外定义，即使他不属于任何对象，也可以引用关键字this。调用call（）方法时，第一个参数是obj，所以this指向的是obj。第二和第三个参数是字符串，与saycolor（）函数中的sPrefix和sSuffix匹配。<br />
-最后的结果是 <strong>“The color is blue ，a very nice color indeed.”</strong></p>
-
-<h2 id="apply">apply()</h2>
-
-<p>apply() 方法有两个参数，用作 this 的对象和要传递给函数的参数的数组。例如：</p>
-
-<pre><code>function sayColor(sPrefix,sSuffix) {
-    alert(sPrefix + this.color + sSuffix);
-};
-
-var obj = new Object();
-obj.color = &quot;blue&quot;;
-
-sayColor.apply(obj, new Array(&quot;The color is &quot;, &quot;a very nice color indeed.&quot;));
-
-</code></pre>
-
-<p>在这个例子中，函数 sayColor() 在对象外定义，即使它不属于任何对象，也可以引用关键字 this。对象 obj 的 color 属性等于 blue。调用 call() 方法时，第一个参数是 obj，说明应该赋予 sayColor() 函数中的 this 关键字值是 obj。第二个和第三个参数是字符串。它们与 sayColor() 函数中的参数 sPrefix 和 sSuffix 匹配，最后生成的消息 <strong>&ldquo;The color is blue, a very nice color indeed.&rdquo; 将被显示出来。</strong></p>
-
-
-                
-                
-<div class="entry-shang text-center">
-    
-	    <p>「真诚赞赏，手留余香」</p>
-	
-	<button class="zs show-zs btn btn-bred">赞赏支持</button>
-</div>
-<div class="zs-modal-bg"></div>
-<div class="zs-modal-box">
-	<div class="zs-modal-head">
-		<button type="button" class="close">×</button>
-		<span class="author"><a href="https://skwings.github.io/"><img src="/img/favicon.png" />Skwings Blog</a></span>
+  
+<div class="container">
+    <div class="row">
         
-	        <p class="tip"><i></i><span>真诚赞赏，手留余香</span></p>
-		
- 
-	</div>
-	<div class="zs-modal-body">
-		<div class="zs-modal-btns">
-			<button class="btn btn-blink" data-num="2">2元</button>
-			<button class="btn btn-blink" data-num="5">5元</button>
-			<button class="btn btn-blink" data-num="10">10元</button>
-			<button class="btn btn-blink" data-num="50">50元</button>
-			<button class="btn btn-blink" data-num="100">100元</button>
-			<button class="btn btn-blink" data-num="1">任意金额</button>
-		</div>
-		<div class="zs-modal-pay">
-			<button class="btn btn-bred" id="pay-text">2元</button>
-			<p>使用<span id="pay-type">微信</span>扫描二维码完成支付</p>
-			<img src="/img/reward/wechat-2.png"  id="pay-image"/>
-		</div>
-	</div>
-	<div class="zs-modal-footer">
-		<label><input type="radio" name="zs-type" value="wechat" class="zs-type" checked="checked"><span ><span class="zs-wechat"><img src="/img/reward/wechat-btn.png"/></span></label>
-		<label><input type="radio" name="zs-type" value="alipay" class="zs-type" class="zs-alipay"><img src="/img/reward/alipay-btn.png"/></span></label>
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
+            
+
+<div class="post-preview">
+    <a href="https://skwings.github.io/post/2019-10-11-markdown/">
+        <h2 class="post-title">
+            Markdown
+        </h2>
+	
+        <div class="post-content-preview">
+	
+            Markdown的简单语法使用
+        
+        </div>
+    </a>
+    <p class="post-meta">
+    Posted by     &#34;SKwings&#34; Saturday, May 4, 2019
+    
+    
+    </p>
+
+</div>
+<hr>
+
+
+            
+
+
+
+       	</div>
+        
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+             
+            
+                
+            
+                
+            
+                
+                    <a href="/tags/css" title="css">
+                        css
+                    </a>
+                
+            
+                
+            
+                
+                    <a href="/tags/javascript" title="javascript">
+                        javascript
+                    </a>
+                
+            
+                
+            
+                
+            
+                
+            
+        </div>
+    </section>
+    
+
+    
+	
+    <section class="visible-md visible-lg">
+	<hr><h5><a href="/top/about">ABOUT ME</a></h5>
+        <div class="short-about">
+            
+            <a href="/top/about">
+               <img src="/img/Skwings.jpg" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>一个迷糊白日梦想家</p>
+            
+           
+           <ul class="list-inline"> 
+               
+               <li>
+                   <a href='/tags/markdown/index.xml' rel="alternate" type="application/rss+xml" title="Skwings Blog" >
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="/wzj1347609251">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/Skwings">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+            
+            
+            
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+            
+            <li><a target="_blank" href="https://zhaozhihan.com"></a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
+</div>
+
 	</div>
 </div>
-<script type="text/javascript" src="/js/reward.js"></script>
-
-                
-
-                <hr>
-                <ul class="pager">
-                    
-                    <li class="previous">
-                        <a href="/post/2019-10-17-call%E4%B8%8Eapply%E7%9A%84%E5%8C%BA%E5%88%AB/" data-toggle="tooltip" data-placement="top" title="apply与call的区别？">&larr;
-                            Previous Post</a>
-                    </li>
-                    
-                    
-                </ul>
-
-                
-<div id="disqus-comment"></div>
 
 
 
-            </div>
-            
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
 
-                
-                
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        
-                        
-                        
-                        <a href="/tags/apply" title="apply">
-                            apply
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/call" title="call">
-                            call
-                        </a>
-                        
-                        
-                        
-                        
-                        
-                        <a href="/tags/javascript" title="javascript">
-                            javascript
-                        </a>
-                        
-                        
-                    </div>
-                </section>
-                
+<div class="post-comment" style="position: static;width: 790px;margin-left:24%;">
+    
+      
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 
-                
-                
-                <section>
-                    <hr>
-                    <h5>FRIENDS</h5>
-                    <ul class="list-inline">
-                        
-                        <li><a target="_blank" href="https://zhaozhihan.com"></a></li>
-                        
-                    </ul>
-                </section>
-                
-            </div>
-        </div>
-    </div>
-</article>
-
-
-
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'rvbmmSl72Us0dUyE2xVgGnlJ-gzGzoHsz',
+        appKey: 'czM3A8oT3m5Crzzi8Ahmz4g5',
+        notify: 'false', 
+        verify: 'false', 
+        avatar:'mm', 
+        placeholder: '说点什么吧...',
+        visitor: 'false'
+    });
+  </script>
+  </div>
 
 <footer>
     <div class="container">
@@ -404,7 +395,7 @@ sayColor.apply(obj, new Array(&quot;The color is &quot;, &quot;a very nice color
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='' rel="alternate" type="application/rss+xml" title="Skwings Blog" >
+                       <a href='/tags/markdown/index.xml' rel="alternate" type="application/rss+xml" title="Skwings Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fa fa-circle fa-stack-2x"></i>
                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
