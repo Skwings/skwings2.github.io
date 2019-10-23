@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascipt on Skwings Blog</title>
+    <link>https://skwings.github.io/tags/javascipt/</link>
+    <description>Recent content in javascipt on Skwings Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skwings.github.io/tags/javascipt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Js中Math()的使用</title>
+      <link>https://skwings.github.io/post/2019-10-16-js%E4%B8%AD%E7%9A%84math%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-16-js%E4%B8%AD%E7%9A%84math%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
+      <description>一、Math 数学函数：但是他不是一个函数，他是一个对象，对象中存储了许多的属性方法，所以被称为数学函数。 typeof math //=&amp;gt; object; Math是一个对象 Math = { ... /</description>
+    </item>
+    
+  </channel>
+</rss>

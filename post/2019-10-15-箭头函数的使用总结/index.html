@@ -373,6 +373,151 @@ $(function() {
 
 <h1 id="箭头函数">箭头函数</h1>
 
+<blockquote>
+<p>箭头函数的基本作用与特点：</p>
+</blockquote>
+
+<ul>
+<li>减少代码量，方便书写</li>
+<li>箭头函数的this指向父作用域，任何方法都改不了，包括call，apply，bind。</li>
+
+<li><p>箭头函数不能作为构造函数，不能使用new</p>
+
+<pre><code>//构造函数如下：
+function Person(p){
+this.name = p.name;
+}
+//如果用箭头函数作为构造函数，则如下,由于this必须是对象实例，而箭头函数是没有实例的，此处的this指向别处，不能产生person实例，自相矛盾。
+var Person = (p) =&gt; {
+this.name = p.name;
+}
+</code></pre></li>
+
+<li><p>箭头函数没有arguments,caller,callee</p></li>
+</ul>
+
+<p>由于this必须是对象实例，而箭头函数是没有实例的，此处的this指向别处，不能产生person实例，自相矛盾。</p>
+
+<pre><code>let B = (b)=&gt;{
+  console.log(arguments);
+}
+B(2,92,32,32);   // Uncaught ReferenceError: arguments is not defined
+
+let C = (...c) =&gt; {
+  console.log(c);
+}
+C(3,82,32,11323);  // [3, 82, 32, 11323]
+</code></pre>
+
+<ul>
+<li><p>箭头函数通过call与apply调用不会改变this指向，只会传入参数</p>
+
+<pre><code>let obj2 = {
+a: 10,
+b: function(n) {
+    let f = (n) =&gt; n + this.a;
+    return f(n);
+},
+c: function(n) {
+    let f = (n) =&gt; n + this.a;
+    let m = {
+        a: 20
+    };
+    return f.call(m,n);
+}
+};
+console.log(obj2.b(1));  // 11
+console.log(obj2.c(1)); // 11
+</code></pre></li>
+
+<li><p>箭头函数没有原型属性</p>
+
+<pre><code>var a = ()=&gt;{
+return 1;
+}
+
+function b(){
+return 2;
+}
+
+console.log(a.prototype);  // undefined
+console.log(b.prototype);   // {constructor: ƒ}
+</code></pre></li>
+
+<li><p>箭头函数返回对象的时候需要加一个小括号</p>
+
+<pre><code>var func = () =&gt; ({ foo: 1 }); //正确
+var func = () =&gt; { foo: 1 };   //错误
+</code></pre></li>
+
+<li><p>箭头函数在ES6 class中声明的方法为实例方法，不是原型方法</p>
+
+<pre><code>//deom1
+class Super{
+sayName(){
+    //do some thing here
+}
+}
+//通过Super.prototype可以访问到sayName方法，这种形式定义的方法，都是定义在prototype上
+var a = new Super()
+var b = new Super()
+a.sayName === b.sayName //true
+//所有实例化之后的对象共享prototypy上的sayName方法
+
+
+//demo2
+class Super{
+sayName =()=&gt;{
+    //do some thing here
+}
+}
+//通过Super.prototype访问不到sayName方法，该方法没有定义在prototype上
+var a = new Super()
+var b = new Super()
+a.sayName === b.sayName //false
+//实例化之后的对象各自拥有自己的sayName方法，比demo1需要更多的内存空间
+</code></pre></li>
+
+<li><p>多重箭头函数就是一个高阶函数，相当于内嵌函数</p>
+
+<pre><code>const add = x =&gt; y =&gt; y + x;
+//相当于
+function add(x){
+return function(y){
+return y + x;
+};
+}
+</code></pre></li>
+
+<li><p>箭头函数常见错误</p>
+
+<pre><code>let a = {
+foo: 1,
+bar: () =&gt; console.log(this.foo)
+}
+
+a.bar()  //undefined
+</code></pre></li>
+</ul>
+
+<blockquote>
+<p>bar函数中的this指向父作用域，而a对象没有作用域，因此this不是a，打印结果为undefined</p>
+</blockquote>
+
+<pre><code>function A() {
+  this.foo = 1
+}
+
+A.prototype.bar = () =&gt; console.log(this.foo)
+
+let a = new A()
+a.bar()  //undefined
+</code></pre>
+
+<blockquote>
+<p>原型上使用箭头函数，this指向是其父作用域，并不是对象a，因此得不到预期结果</p>
+</blockquote>
+
 <h4 id="原生代码改写成使用箭头函数">原生代码改写成使用箭头函数</h4>
 
 <pre><code>let sum=(n,m)=&gt;{
@@ -408,6 +553,8 @@ let sum = (...arg) =&gt; eval(arg.join('+'));
 let sum = (n=0,m=0) =&gt; n+m;
 </code></pre>
 
+<p><a href="https://www.cnblogs.com/mengff/p/9656486.html">原文链接</a></p>
+
 
                 
 
@@ -415,7 +562,7 @@ let sum = (n=0,m=0) =&gt; n+m;
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/2019-10-16-js%E4%B8%AD%E7%9A%84math%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/" data-toggle="tooltip" data-placement="top" title="Flex">&larr;
+                        <a href="/post/2019-10-16-js%E4%B8%AD%E7%9A%84math%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/" data-toggle="tooltip" data-placement="top" title="Js中Math()的使用">&larr;
                             Previous Post</a>
                     </li>
                     
@@ -466,9 +613,7 @@ let sum = (n=0,m=0) =&gt; n+m;
                         
                         
                         
-                        <a href="/tags/css" title="css">
-                            css
-                        </a>
+                        
                         
                         
                         
@@ -477,6 +622,20 @@ let sum = (n=0,m=0) =&gt; n+m;
                         <a href="/tags/javascript" title="javascript">
                             javascript
                         </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/vue" title="vue">
+                            vue
+                        </a>
+                        
+                        
                         
                         
                         
@@ -508,43 +667,23 @@ let sum = (n=0,m=0) =&gt; n+m;
 
 
 
-<div class="post-comment" style="position: static;width: 790px;margin-left:24%;">
-    
-      
-  
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'rvbmmSl72Us0dUyE2xVgGnlJ-gzGzoHsz',
-        appKey: 'czM3A8oT3m5Crzzi8Ahmz4g5',
-        notify: 'false', 
-        verify: 'false', 
-        avatar:'mm', 
-        placeholder: '说点什么吧...',
-        visitor: 'false'
-    });
-  </script>
-  </div>
 
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                   
-                   <li>
-                       <a href='' rel="alternate" type="application/rss+xml" title="Skwings Blog" >
-                           <span class="fa-stack fa-lg">
-                               <i class="fa fa-circle fa-stack-2x"></i>
-                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                           </span>
-                       </a>
-                   </li>
-                   
+                    
+                    <li>
+                        <a href='' rel="alternate"
+                            type="application/rss+xml" title="Skwings Blog">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
                     
                     <li>
                         <a href="mailto:1347609251@qq.com">
@@ -554,15 +693,15 @@ let sum = (n=0,m=0) =&gt; n+m;
                             </span>
                         </a>
                     </li>
-		    
                     
+
                     
                     
                     
 
                     
 
-		    
+                    
                     
                     <li>
                         <a target="_blank" href="/wzj1347609251">
@@ -572,7 +711,7 @@ let sum = (n=0,m=0) =&gt; n+m;
                             </span>
                         </a>
                     </li>
-		    
+                    
                     
                     <li>
                         <a target="_blank" href="https://github.com/Skwings">
@@ -582,7 +721,7 @@ let sum = (n=0,m=0) =&gt; n+m;
                             </span>
                         </a>
                     </li>
-		    
+                    
                     
                     
                     
@@ -594,7 +733,7 @@ let sum = (n=0,m=0) =&gt; n+m;
                             </span>
                         </a>
                     </li>
-		    
+                    
                     
                     
                     <li>
@@ -605,19 +744,19 @@ let sum = (n=0,m=0) =&gt; n+m;
                             </span>
                         </a>
                     </li>
-            
+                    
                     
                     
                     
                 </ul>
-		<p class="copyright text-muted">
+                <p class="copyright text-muted">
                     Copyright &copy; Skwings Blog 2019
                     <br>
-                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a
+                        href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
+                        height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true">
                     </iframe>
                 </p>
             </div>
@@ -630,12 +769,12 @@ let sum = (n=0,m=0) =&gt; n+m;
 
 <script>
     function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
     }
 </script>
 
@@ -646,11 +785,11 @@ let sum = (n=0,m=0) =&gt; n+m;
 
 <script>
     
-    if($('#tag_cloud').length !== 0){
-        async("/js/jquery.tagcloud.js",function(){
+    if ($('#tag_cloud').length !== 0) {
+        async("/js/jquery.tagcloud.js", function () {
             $.fn.tagcloud.defaults = {
                 
-                color: {start: '#bbbbee', end: '#0085a1'},
+                color: { start: '#bbbbee', end: '#0085a1' },
             };
             $('#tag_cloud a').tagcloud();
         })
@@ -659,12 +798,11 @@ let sum = (n=0,m=0) =&gt; n+m;
 
 
 <script>
-    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function () {
         var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
+        if ($nav) FastClick.attach($nav);
     })
 </script>
-
 
 
 

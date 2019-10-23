@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vue on Skwings Blog</title>
+    <link>https://skwings.github.io/tags/vue/</link>
+    <description>Recent content in Vue on Skwings Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 19 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skwings.github.io/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jquery和Vue的技术优劣的对比</title>
+      <link>https://skwings.github.io/post/jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</link>
+      <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</guid>
+      <description>已经9012年了，如果你的公司还在用table+div布局，用jq操作dom，请离职！ 前端技术日新月异，vue所提倡的数据驱动视图和jQue</description>
+    </item>
+    
+    <item>
+      <title>添加、查询、删除案例</title>
+      <link>https://skwings.github.io/post/%E6%B7%BB%E5%8A%A0%E6%9F%A5%E8%AF%A2%E5%88%A0%E9%99%A4%E6%A1%88%E4%BE%8B/</link>
+      <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/%E6%B7%BB%E5%8A%A0%E6%9F%A5%E8%AF%A2%E5%88%A0%E9%99%A4%E6%A1%88%E4%BE%8B/</guid>
+      <description>添加品牌 ID: Name: 按名称进行搜索： ID Name Ctime ID {{ item.id }}--{{index}} {{ item.name }} {{ item.ctime }} 删除 var vm = new Vue({ el:&#39;#app&#39;, data: { List:[ {id:1,name:&#39;宝马&#39;,ctime:new Date()}, {id:2,</description>
+    </item>
+    
+    <item>
+      <title>什么是Mvvm</title>
+      <link>https://skwings.github.io/post/%E4%BB%80%E4%B9%88%E6%98%AFmvvm/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/%E4%BB%80%E4%B9%88%E6%98%AFmvvm/</guid>
+      <description>什么是Mvvm Mvvm定义MVVM是Model-View-ViewModel的简写。即模型-视图-视图模型。【模型】指的是后端传递的数据。【</description>
+    </item>
+    
+  </channel>
+</rss>

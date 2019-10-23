@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Skwings Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 16 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skwings.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jquery和Vue的技术优劣的对比</title>
+      <link>https://skwings.github.io/post/jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</link>
+      <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</guid>
+      <description>已经9012年了，如果你的公司还在用table+div布局，用jq操作dom，请离职！ 前端技术日新月异，vue所提倡的数据驱动视图和jQue</description>
+    </item>
     
     <item>
       <title>Flex布局详解</title>
@@ -26,16 +35,43 @@
       <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://skwings.github.io/post/2019-10-15-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E7%9A%84%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</guid>
-      <description>箭头函数 原生代码改写成使用箭头函数 let sum=(n,m)=&amp;gt;{ retrun n+m; } //改写 let sum=(n,m)=&amp;gt;n+m;//当函数体只有一行return时，可以省略大括号</description>
+      <description>箭头函数 箭头函数的基本作用与特点： 减少代码量，方便书写 箭头函数的this指向父作用域，任何方法都改不了，包括call，apply，bind。</description>
     </item>
     
     <item>
-      <title>Flex</title>
+      <title>Js中Math()的使用</title>
       <link>https://skwings.github.io/post/2019-10-16-js%E4%B8%AD%E7%9A%84math%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</link>
       <pubDate>Tue, 15 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://skwings.github.io/post/2019-10-16-js%E4%B8%AD%E7%9A%84math%E5%B8%B8%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/</guid>
       <description>一、Math 数学函数：但是他不是一个函数，他是一个对象，对象中存储了许多的属性方法，所以被称为数学函数。 typeof math //=&amp;gt; object; Math是一个对象 Math = { ... /</description>
+    </item>
+    
+    <item>
+      <title>函数与变量提升</title>
+      <link>https://skwings.github.io/post/%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</guid>
+      <description>一、变量提升 在ES6之前JavaScipt并没有块级作用域（一个花括号即是一个块级作用域），只有全局作用域与函数作用域。变量提升即将变量声明</description>
+    </item>
+    
+    <item>
+      <title>添加、查询、删除案例</title>
+      <link>https://skwings.github.io/post/%E6%B7%BB%E5%8A%A0%E6%9F%A5%E8%AF%A2%E5%88%A0%E9%99%A4%E6%A1%88%E4%BE%8B/</link>
+      <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/%E6%B7%BB%E5%8A%A0%E6%9F%A5%E8%AF%A2%E5%88%A0%E9%99%A4%E6%A1%88%E4%BE%8B/</guid>
+      <description>添加品牌 ID: Name: 按名称进行搜索： ID Name Ctime ID {{ item.id }}--{{index}} {{ item.name }} {{ item.ctime }} 删除 var vm = new Vue({ el:&#39;#app&#39;, data: { List:[ {id:1,name:&#39;宝马&#39;,ctime:new Date()}, {id:2,</description>
+    </item>
+    
+    <item>
+      <title>什么是Mvvm</title>
+      <link>https://skwings.github.io/post/%E4%BB%80%E4%B9%88%E6%98%AFmvvm/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/%E4%BB%80%E4%B9%88%E6%98%AFmvvm/</guid>
+      <description>什么是Mvvm Mvvm定义MVVM是Model-View-ViewModel的简写。即模型-视图-视图模型。【模型】指的是后端传递的数据。【</description>
     </item>
     
     <item>

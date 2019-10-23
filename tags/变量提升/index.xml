@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>变量提升 on Skwings Blog</title>
+    <link>https://skwings.github.io/tags/%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/</link>
+    <description>Recent content in 变量提升 on Skwings Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 13 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skwings.github.io/tags/%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>函数与变量提升</title>
+      <link>https://skwings.github.io/post/%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</link>
+      <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</guid>
+      <description>一、变量提升 在ES6之前JavaScipt并没有块级作用域（一个花括号即是一个块级作用域），只有全局作用域与函数作用域。变量提升即将变量声明</description>
+    </item>
+    
+  </channel>
+</rss>

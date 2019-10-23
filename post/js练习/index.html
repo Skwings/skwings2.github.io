@@ -480,9 +480,7 @@ Array.prototype.unique1=function(){
                         
                         
                         
-                        <a href="/tags/css" title="css">
-                            css
-                        </a>
+                        
                         
                         
                         
@@ -491,6 +489,20 @@ Array.prototype.unique1=function(){
                         <a href="/tags/javascript" title="javascript">
                             javascript
                         </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/vue" title="vue">
+                            vue
+                        </a>
+                        
+                        
                         
                         
                         
@@ -522,43 +534,23 @@ Array.prototype.unique1=function(){
 
 
 
-<div class="post-comment" style="position: static;width: 790px;margin-left:24%;">
-    
-      
-  
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: 'rvbmmSl72Us0dUyE2xVgGnlJ-gzGzoHsz',
-        appKey: 'czM3A8oT3m5Crzzi8Ahmz4g5',
-        notify: 'false', 
-        verify: 'false', 
-        avatar:'mm', 
-        placeholder: '说点什么吧...',
-        visitor: 'false'
-    });
-  </script>
-  </div>
 
 <footer>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
-                   
-                   <li>
-                       <a href='' rel="alternate" type="application/rss+xml" title="Skwings Blog" >
-                           <span class="fa-stack fa-lg">
-                               <i class="fa fa-circle fa-stack-2x"></i>
-                               <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                           </span>
-                       </a>
-                   </li>
-                   
+                    
+                    <li>
+                        <a href='' rel="alternate"
+                            type="application/rss+xml" title="Skwings Blog">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
                     
                     <li>
                         <a href="mailto:1347609251@qq.com">
@@ -568,15 +560,15 @@ Array.prototype.unique1=function(){
                             </span>
                         </a>
                     </li>
-		    
                     
+
                     
                     
                     
 
                     
 
-		    
+                    
                     
                     <li>
                         <a target="_blank" href="/wzj1347609251">
@@ -586,7 +578,7 @@ Array.prototype.unique1=function(){
                             </span>
                         </a>
                     </li>
-		    
+                    
                     
                     <li>
                         <a target="_blank" href="https://github.com/Skwings">
@@ -596,7 +588,7 @@ Array.prototype.unique1=function(){
                             </span>
                         </a>
                     </li>
-		    
+                    
                     
                     
                     
@@ -608,7 +600,7 @@ Array.prototype.unique1=function(){
                             </span>
                         </a>
                     </li>
-		    
+                    
                     
                     
                     <li>
@@ -619,19 +611,19 @@ Array.prototype.unique1=function(){
                             </span>
                         </a>
                     </li>
-            
+                    
                     
                     
                     
                 </ul>
-		<p class="copyright text-muted">
+                <p class="copyright text-muted">
                     Copyright &copy; Skwings Blog 2019
                     <br>
-                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a
+                        href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
+                        height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true">
                     </iframe>
                 </p>
             </div>
@@ -644,12 +636,12 @@ Array.prototype.unique1=function(){
 
 <script>
     function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
     }
 </script>
 
@@ -660,11 +652,11 @@ Array.prototype.unique1=function(){
 
 <script>
     
-    if($('#tag_cloud').length !== 0){
-        async("/js/jquery.tagcloud.js",function(){
+    if ($('#tag_cloud').length !== 0) {
+        async("/js/jquery.tagcloud.js", function () {
             $.fn.tagcloud.defaults = {
                 
-                color: {start: '#bbbbee', end: '#0085a1'},
+                color: { start: '#bbbbee', end: '#0085a1' },
             };
             $('#tag_cloud a').tagcloud();
         })
@@ -673,12 +665,11 @@ Array.prototype.unique1=function(){
 
 
 <script>
-    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function () {
         var $nav = document.querySelector("nav");
-        if($nav) FastClick.attach($nav);
+        if ($nav) FastClick.attach($nav);
     })
 </script>
-
 
 
 
