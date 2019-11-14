@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jq on Skwings Blog</title>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Jquery和Vue的技术优劣的对比</title>
-      <link>https://skwings.github.io/post/jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</link>
+      <link>https://skwings.github.io/post/2019-10-19jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</link>
       <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skwings.github.io/post/jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</guid>
+      <guid>https://skwings.github.io/post/2019-10-19jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</guid>
       <description>已经9012年了，如果你的公司还在用table+div布局，用jq操作dom，请离职！ 前端技术日新月异，vue所提倡的数据驱动视图和jQue</description>
     </item>
     

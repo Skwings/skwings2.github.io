@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Skwings Blog">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://skwings.github.io//img/home-bg-jeep.jpg">
+    <meta property="twitter:image" content="https://skwings.github.io//img/home-bg-jeep.jpg" />
+    
+
+    
+    <meta name="title" content="Jquery和Vue的技术优劣的对比" />
+    <meta property="og:title" content="Jquery和Vue的技术优劣的对比" />
+    <meta property="twitter:title" content="Jquery和Vue的技术优劣的对比" />
+    
+
+    
+    <meta name="description" content="详细比较二者差别">
+    <meta property="og:description" content="详细比较二者差别" />
+    <meta property="twitter:description" content="详细比较二者差别" />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="Skwings, 绯羽, Skwings blog, , 绯羽的网络日志, 绯羽的博客, 博客, 个人网站, 互联网, Web">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Jquery和Vue的技术优劣的对比-绯羽的博客 | Skwings Blog</title>
+
+    <link rel="canonical" href="/post/2019-10-19jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/">
+
+    <link rel="stylesheet" href="/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/css/syntax.css">
+    
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+    
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    
+    
+    <script src="/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    
+
+</head>
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Skwings Blog</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/practice">practice</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/categories/tech">tech</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/top/books/">BOOKS</a></li>
+                    
+                        <li><a href="/top/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search">SEARCH <img src="/img/search.png" height="15" style="cursor: pointer;" alt="Search"></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('https://img.zhaohuabing.com/in-post/2018-06-04-introducing-the-istio-v1alpha3-routing-api/background.jpg')
+    }
+</style>
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/jq" title="Jq">
+                            Jq
+                        </a>
+                        
+                        <a class="tag" href="/tags/vue" title="Vue">
+                            Vue
+                        </a>
+                        
+                    </div>
+                    <h1>Jquery和Vue的技术优劣的对比</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        Posted by 
+                        
+                                &#34;SKwings&#34;
+                         
+                        on 
+                        Saturday, October 19, 2019
+                        
+                            <span id="/post/2019-10-19jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/" class="leancloud_visitors meta_data_item" data-flag-title="">
+    <span class="post-meta-item-icon">
+      <span class="octicon octicon-eye"></span> 
+    </span>
+    <i class="fa fa-eye"></i>
+    <span class="old-visitors-count" style="display: none;"></span>
+    <span class="leancloud-visitors-count"></span>
+</span>
+
+
+
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+
+<script>
+	AV.initialize("rvbmmSl72Us0dUyE2xVgGnlJ-gzGzoHsz", "czM3A8oT3m5Crzzi8Ahmz4g5");
+</script>
+
+<script type="text/javascript">
+function showTime(Counter) {
+    var query = new AV.Query(Counter);
+    var entries = [];
+    var $visitors = $(".leancloud_visitors");
+
+    $visitors.each(function() {
+        entries.push($(this).attr("id").trim());
+    });
+
+    query.containedIn('url', entries);
+    query.find()
+        .done(function(results) {
+            var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+            var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+
+            
+            
+            
+            
+
+            for (var i = 0; i < results.length; i++) {
+                var item = results[i];
+                var url = item.get('url');
+                var time = item.get('time');
+                var element = document.getElementById(url);
+
+                $(element).find(COUNT_CONTAINER_REF).text(time);
+            }
+            for (var i = 0; i < entries.length; i++) {
+                var url = entries[i];
+                var element = document.getElementById(url);
+                var countSpan = $(element).find(COUNT_CONTAINER_REF);
+                if (countSpan.text() == '') {
+                    var oldCountSpan = $(element).find(OLD_COUNT_CONTAINER_REF).text();
+                    if(oldCountSpan!=''){
+                        countSpan.text(0+parseInt(oldCountSpan));
+                    }else{
+                        countSpan.text(0);          
+                    }
+                }
+            }
+        })
+        .fail(function(object, error) {
+            console.log("Error: " + error.code + " " + error.message);
+        });
+}
+
+function addCount(Counter) {
+    var $visitors = $(".leancloud_visitors");
+    var url = $visitors.attr('id').trim();
+    var title = $visitors.attr('data-flag-title').trim();
+    var query = new AV.Query(Counter);
+
+    query.equalTo("url", url);
+    query.find({
+        success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment("time");
+                counter.save(null, {
+                    success: function(counter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+                var newcounter = new Counter();
+                 
+                var acl = new AV.ACL();
+                acl.setPublicReadAccess(true);
+                acl.setPublicWriteAccess(true);
+                newcounter.setACL(acl);
+                 
+                newcounter.set("title", title);
+                newcounter.set("url", url);
+                var OLD_COUNT_CONTAINER_REF = '.old-visitors-count';
+                var $element = $(document.getElementById(url));
+                var oldCountSpan = $element.find(OLD_COUNT_CONTAINER_REF).text();
+                if(oldCountSpan!=''){
+                    newcounter.set("time", parseInt(oldCountSpan)+1);
+                }else{
+ 	                    newcounter.set("time",  1);
+                }
+                newcounter.save(null, {
+                    success: function(newcounter) {
+                        var $element = $(document.getElementById(url));
+                        $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                    },
+                    error: function(newcounter, error) {
+                        console.log('Failed to create');
+                    }
+                });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + " " + error.message);
+        }
+    });
+}
+$(function() {
+    var Counter = AV.Object.extend("Counter");
+    
+    
+    if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+    } else {
+        showTime(Counter);
+    }
+});
+</script>
+
+                        
+                        
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <header>
+                    <h2>TOC</h2>
+                </header>
+                <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#1-精力集中">1、精力集中</a></li>
+<li><a href="#2-代码结构">2、代码结构</a></li>
+<li><a href="#3-操作性">3、操作性</a></li>
+<li><a href="#4-模块化">4、模块化</a></li>
+<li><a href="#5-单页面实现">5、单页面实现</a></li>
+<li><a href="#6-组件的复用">6、组件的复用</a></li>
+<li><a href="#7-性能">7、性能</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+                
+                
+
+<p>已经9012年了，如果你的公司还在用table+div布局，用jq操作dom，请离职！</p>
+
+<p>前端技术日新月异，vue所提倡的数据驱动视图和jQuery的直接操作DOM在编写页面时的思路是完全不同的。虽然两种思路是完全不同的，但也不能说是不能一起用的，在某些没有办法的情况下(例如需要操作dom的情况下)，把jQuery和vue用在一块是完全没问题的，当然把这两种技术用在一起是肯定不会出现在最佳实践里的，因为确实没有特殊情况的话，这样用就是有点自找麻烦了。</p>
+
+<p>以下是对传统jq与目前最热的vue进行的技术特性对比：</p>
+
+<h3 id="1-精力集中">1、精力集中</h3>
+
+<p>Jq偏重于对dom的操作，由它的函数就很容易看出来，$()、parent()、find()。我们用jq的时候经常要去考虑怎么去渲染数据，怎么从视图中取到数据，操作数据前必须对dom节点进行选取修改赋值等操作，这其实分散了我们的本该放在业务逻辑上的精力。而Vue则是基于MVVM思想，数据驱动，双向绑定，只需要定义好渲染规则，如果数据发生改变，vue会帮我们重新渲染整个页面，所以我们只需将注意力放在数据操作上就可以了。</p>
+
+<h3 id="2-代码结构">2、代码结构</h3>
+
+<p>如果你用jq没有好的代码架构，很容易就回出现一种情况就是：js里写着html元素代码，而且可能会遍布很多地方。因为增删改查你都需要对dom进行操作，这里甚至可能会写多了些冗余代码。代码架构好一点的，可能会写成一种简版框架（即有专门的渲染函数，增删改查都会调用这个函数），依然是全域的，需要闭包。而vue就没有这个问题方法全部写在methods中，提供多种钩子函数对页面渲染过成进行精准操作。</p>
+
+<h3 id="3-操作性">3、操作性</h3>
+
+<p>用jq去操作dom实际上是蛮麻烦的。比如说又个对象数组已经渲染成表格了，这时你需要修改某一个id的那个对象的数据行，jq的话最麻烦的做法就是在遍历里面先拿到id，检查相等，相等的话，用index去拿到要改的那个dom，再重新渲染。而用vue的话，可以直接修改数据就可以了，而且你甚至可以用Array.map Array.filter ，方便快捷，提升开发效率</p>
+
+<h3 id="4-模块化">4、模块化</h3>
+
+<p>目前无论前端还是后端开发，越来越倾向于模块化组件化，以求降低不同模块，不同功能区块之间的耦合度，便于后期业务的修改与拓展，vue完全cover上述特性，而使用jq的时候，如果你的js牛逼轰轰的写得已经超长了，然后你又觉得需要分下模块了，这时你有两选择，1是用seajs,requirejs等，2是用原生的import去管理你的代码。说实话，我没怎么用过requirejs去分模块，可能是我压根就想没到这些js要怎么分。</p>
+
+<h3 id="5-单页面实现">5、单页面实现</h3>
+
+<p>单页面的实现原理估计大家都很熟了，一般是几个div在来回切换。如果一开始已经写好html，再来回切的话，html是太长了。如果用js去写又拼的很麻烦。如果你想用jq、原生实现页面切换，我能想到比较好的方式是用模版引擎&hellip;吗？但其实单页面的实现我感觉没那么简单，你不单单要考虑html能否单独写出来，还要考虑js需不需要按需加载，路由需不需要等等。。。用vue就不需要烦这些东西，vue自动构建单页应用，使用router模拟跳转。</p>
+
+<h3 id="6-组件的复用">6、组件的复用</h3>
+
+<p>用vue最爽的莫过于使用别人写好的组件。目前vue的生态已经非常庞大，主流的组件库有element-ui，iview，使用主流的组件库不仅避免了我们重复造轮子，而且方便新员工快速接手项目，某个大神的组件总结：<a href="https://www.toutiao.com/i6718405521088446988/?timestamp=1564450212&amp;app=news_article&amp;group_id=6718405521088446988&amp;req_id=20190730093011010018026159736CF92，其实如果你项目大的时候，有些组件（一些功能和视图的集合）可能会复用。这些相对于jq就是插件了，个人不喜欢script引入插件（任性）">https://www.toutiao.com/i6718405521088446988/?timestamp=1564450212&amp;app=news_article&amp;group_id=6718405521088446988&amp;req_id=20190730093011010018026159736CF92，其实如果你项目大的时候，有些组件（一些功能和视图的集合）可能会复用。这些相对于jq就是插件了，个人不喜欢script引入插件（任性）</a></p>
+
+<h3 id="7-性能">7、性能</h3>
+
+<p>vue使用了虚拟dom技术，能够减少 dom的操作，能提高一定的效率。</p>
+
+<p><a href="https://blog.csdn.net/weixin_38023579/article/details/97751311">原文链接</a></p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/2019-10-18flex%E5%B8%83%E5%B1%80%E8%AF%A6%E8%A7%A3/" data-toggle="tooltip" data-placement="top" title="Flex布局详解">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/2019-10-24%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81%E4%B8%8E%E9%98%B2%E6%8A%96/" data-toggle="tooltip" data-placement="top" title="函数节流与防抖">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+                  
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'rvbmmSl72Us0dUyE2xVgGnlJ-gzGzoHsz',
+        appKey: 'czM3A8oT3m5Crzzi8Ahmz4g5',
+        notify: 'false', 
+        verify: 'false', 
+        avatar:'mm', 
+        placeholder: '说点什么吧...',
+        visitor: 'false'
+    });
+  </script>
+
+            </div>
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/javascript" title="javascript">
+                            javascript
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/vue" title="vue">
+                            vue
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+                <section>
+                    <hr>
+                    <h5>FRIENDS</h5>
+                    <ul class="list-inline">
+                        
+                        <li><a target="_blank" href="https://zhaozhihan.com"></a></li>
+                        
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+                    <li>
+                        <a href='' rel="alternate"
+                            type="application/rss+xml" title="Skwings Blog">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="mailto:1347609251@qq.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+
+                    
+                    
+                    
+
+                    
+
+                    
+                    
+                    <li>
+                        <a target="_blank" href="/wzj1347609251">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Skwings">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; Skwings Blog 2019
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a
+                        href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
+                        height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if ($('#tag_cloud').length !== 0) {
+        async("/js/jquery.tagcloud.js", function () {
+            $.fn.tagcloud.defaults = {
+                
+                color: { start: '#bbbbee', end: '#0085a1' },
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function () {
+        var $nav = document.querySelector("nav");
+        if ($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+</body>
+</html>

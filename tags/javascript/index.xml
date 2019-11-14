@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>javaScript on Skwings Blog</title>
@@ -6,10 +6,28 @@
     <description>Recent content in javaScript on Skwings Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 16 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skwings.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>越疆笔试题总结</title>
+      <link>https://skwings.github.io/post/2019-10-29%E8%B6%8A%E7%96%86%E7%AC%94%E8%AF%95%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-29%E8%B6%8A%E7%96%86%E7%AC%94%E8%AF%95%E6%80%BB%E7%BB%93/</guid>
+      <description>笔试题 1.Js实现冒泡排序 //冒泡排序 function bubbleSort( arr ){ let len = arr.length; for(let i=0;i&amp;lt;len-1;i++){ for(let j=0;j&amp;lt;len-i-1;j++){ if(arr[j+1]&amp;lt;arr[j]){ let temp; temp=arr[j]; arr[j]=arr[j+1]; a[j+1]=temp; } } } return arr; } var a=[7,8,1,4,6,2,7,3,0,4,6,1]; bubbleSort(a); console.log(a);//[0, 1, 1, 2, 3, 4, 4, 6, 6, 7, 7, 8] 2.如果有一个很大的数，</description>
+    </item>
+    
+    <item>
+      <title>函数节流与防抖</title>
+      <link>https://skwings.github.io/post/2019-10-24%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81%E4%B8%8E%E9%98%B2%E6%8A%96/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-24%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81%E4%B8%8E%E9%98%B2%E6%8A%96/</guid>
+      <description>函数节流 什么是函数节流？ 大多是指频繁触发的事件，我们希望他隔一段时间执行一次，即我们希望一个函数在一个可以接受的频率重复调用。 函数节流就是针</description>
+    </item>
     
     <item>
       <title>箭头函数使用总结</title>
@@ -22,10 +40,10 @@
     
     <item>
       <title>添加、查询、删除案例</title>
-      <link>https://skwings.github.io/post/%E6%B7%BB%E5%8A%A0%E6%9F%A5%E8%AF%A2%E5%88%A0%E9%99%A4%E6%A1%88%E4%BE%8B/</link>
+      <link>https://skwings.github.io/post/2019-10-23%E6%B7%BB%E5%8A%A0%E6%9F%A5%E8%AF%A2%E5%88%A0%E9%99%A4%E6%A1%88%E4%BE%8B/</link>
       <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skwings.github.io/post/%E6%B7%BB%E5%8A%A0%E6%9F%A5%E8%AF%A2%E5%88%A0%E9%99%A4%E6%A1%88%E4%BE%8B/</guid>
+      <guid>https://skwings.github.io/post/2019-10-23%E6%B7%BB%E5%8A%A0%E6%9F%A5%E8%AF%A2%E5%88%A0%E9%99%A4%E6%A1%88%E4%BE%8B/</guid>
       <description>添加品牌 ID: Name: 按名称进行搜索： ID Name Ctime ID {{ item.id }}--{{index}} {{ item.name }} {{ item.ctime }} 删除 var vm = new Vue({ el:&#39;#app&#39;, data: { List:[ {id:1,name:&#39;宝马&#39;,ctime:new Date()}, {id:2,</description>
     </item>
     
@@ -40,10 +58,10 @@
     
     <item>
       <title>Js每日练习</title>
-      <link>https://skwings.github.io/post/js%E7%BB%83%E4%B9%A0/</link>
+      <link>https://skwings.github.io/post/2019-10-20js%E7%BB%83%E4%B9%A0/</link>
       <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skwings.github.io/post/js%E7%BB%83%E4%B9%A0/</guid>
+      <guid>https://skwings.github.io/post/2019-10-20js%E7%BB%83%E4%B9%A0/</guid>
       <description>练习 1.利用实现每隔10分钟刷新一次窗口 window.onload = function(){ setTnterval(fuction(){ window.location.reload() },60000) } `` 2.原型链上添加函数，实现数组去重 //第一种解决方案 Array.prototype.unnique=function(){ for(var i=0;i&amp;lt;=this.length;i++){ for(var j=i+1;j&amp;lt;this.length;j++){ if ( arr[i]===arr[j] ){ arr.spl</description>
     </item>
     

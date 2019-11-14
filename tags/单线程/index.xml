@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>单线程 on Skwings Blog</title>
+    <link>https://skwings.github.io/tags/%E5%8D%95%E7%BA%BF%E7%A8%8B/</link>
+    <description>Recent content in 单线程 on Skwings Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 04 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skwings.github.io/tags/%E5%8D%95%E7%BA%BF%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>详解单线程与多线程的区别</title>
+      <link>https://skwings.github.io/post/2019-10-28%E8%AF%A6%E8%A7%A3%E5%8D%95%E7%BA%BF%E7%A8%8B%E4%B8%8E%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%BB%A5%E5%8F%8Ajs%E7%9A%84%E5%8D%95%E7%BA%BF%E7%A8%8B%E4%B8%8E%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Tue, 04 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-28%E8%AF%A6%E8%A7%A3%E5%8D%95%E7%BA%BF%E7%A8%8B%E4%B8%8E%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%BB%A5%E5%8F%8Ajs%E7%9A%84%E5%8D%95%E7%BA%BF%E7%A8%8B%E4%B8%8E%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AE%9E%E7%8E%B0/</guid>
+      <description>何为进程？ 进程可以看做是一个真在运行的程序，操作系统启动之后会加载大量的应用，可能有几十个应用，每个应用就是一个运行的程序，可以看成是一个进</description>
+    </item>
+    
+  </channel>
+</rss>

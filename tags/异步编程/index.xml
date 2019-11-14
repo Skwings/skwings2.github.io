@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>异步编程 on Skwings Blog</title>
+    <link>https://skwings.github.io/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 异步编程 on Skwings Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skwings.github.io/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Js异步编程</title>
+      <link>https://skwings.github.io/post/js%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/js%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</guid>
+      <description>1.1什么叫异步 异步(async)是相对于同步(sync)而言的，很好理解。 同步就是一件事一件事的执行。只有前一个任务执行完毕，才能执行后一</description>
+    </item>
+    
+  </channel>
+</rss>

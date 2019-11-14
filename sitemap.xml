@@ -1,10 +1,120 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://skwings.github.io/categories/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/post/js%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/post/</loc>
+    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/</loc>
+    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/</loc>
+    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/categories/tech/</loc>
+    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/%E6%AD%A3%E5%88%99/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/post/2019-10-30%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/javascript/</loc>
+    <lastmod>2019-10-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/%E7%AC%94%E8%AF%95/</loc>
+    <lastmod>2019-10-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/post/2019-10-29%E8%B6%8A%E7%96%86%E7%AC%94%E8%AF%95%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2019-10-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/post/2019-10-27%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2019-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/cors/</loc>
+    <lastmod>2019-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/jsonp/</loc>
+    <lastmod>2019-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
+    <lastmod>2019-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/post/2019-10-26%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2019-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/npm/</loc>
+    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/post/2019-10-25%E8%A7%A3%E5%86%B3npm%E8%A2%AB%E5%A2%99%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81/</loc>
+    <lastmod>2019-10-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/post/2019-10-24%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81%E4%B8%8E%E9%98%B2%E6%8A%96/</loc>
+    <lastmod>2019-10-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/%E5%87%BD%E6%95%B0%E9%98%B2%E6%8A%96/</loc>
+    <lastmod>2019-10-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -13,27 +123,7 @@
   </url>
   
   <url>
-    <loc>https://skwings.github.io/post/jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skwings.github.io/post/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skwings.github.io/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skwings.github.io/tags/</loc>
-    <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skwings.github.io/categories/tech/</loc>
+    <loc>https://skwings.github.io/post/2019-10-19jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</loc>
     <lastmod>2019-10-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -54,11 +144,6 @@
   
   <url>
     <loc>https://skwings.github.io/post/2019-10-18flex%E5%B8%83%E5%B1%80%E8%AF%A6%E8%A7%A3/</loc>
-    <lastmod>2019-10-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://skwings.github.io/tags/javascript/</loc>
     <lastmod>2019-10-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -88,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://skwings.github.io/post/%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</loc>
+    <loc>https://skwings.github.io/post/2019-10-21%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</loc>
     <lastmod>2019-10-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -108,7 +193,7 @@
   </url>
   
   <url>
-    <loc>https://skwings.github.io/post/%E6%B7%BB%E5%8A%A0%E6%9F%A5%E8%AF%A2%E5%88%A0%E9%99%A4%E6%A1%88%E4%BE%8B/</loc>
+    <loc>https://skwings.github.io/post/2019-10-23%E6%B7%BB%E5%8A%A0%E6%9F%A5%E8%AF%A2%E5%88%A0%E9%99%A4%E6%A1%88%E4%BE%8B/</loc>
     <lastmod>2019-10-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -118,7 +203,7 @@
   </url>
   
   <url>
-    <loc>https://skwings.github.io/post/%E4%BB%80%E4%B9%88%E6%98%AFmvvm/</loc>
+    <loc>https://skwings.github.io/post/2019-10-22%E4%BB%80%E4%B9%88%E6%98%AFmvvm/</loc>
     <lastmod>2019-09-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -138,7 +223,22 @@
   </url>
   
   <url>
-    <loc>https://skwings.github.io/post/js%E7%BB%83%E4%B9%A0/</loc>
+    <loc>https://skwings.github.io/post/2019-10-20js%E7%BB%83%E4%B9%A0/</loc>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/%E5%8D%95%E7%BA%BF%E7%A8%8B/</loc>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+    <lastmod>2019-06-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/post/2019-10-28%E8%AF%A6%E8%A7%A3%E5%8D%95%E7%BA%BF%E7%A8%8B%E4%B8%8E%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%BB%A5%E5%8F%8Ajs%E7%9A%84%E5%8D%95%E7%BA%BF%E7%A8%8B%E4%B8%8E%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AE%9E%E7%8E%B0/</loc>
     <lastmod>2019-06-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -173,11 +273,23 @@
   </url>
   
   <url>
+    <loc>https://skwings.github.io/tags/es6/</loc>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/tags/promise/</loc>
+  </url>
+  
+  <url>
     <loc>https://skwings.github.io/search/</loc>
   </url>
   
   <url>
     <loc>https://skwings.github.io/top/</loc>
+  </url>
+  
+  <url>
+    <loc>https://skwings.github.io/post/es6-promise/</loc>
   </url>
   
 </urlset>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CORS on Skwings Blog</title>
+    <link>https://skwings.github.io/tags/cors/</link>
+    <description>Recent content in CORS on Skwings Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 26 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skwings.github.io/tags/cors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>跨域请求的解决方案</title>
+      <link>https://skwings.github.io/post/2019-10-26%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-26%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>跨域（非同源策略请求） 为什么跨域请求会出现在前端开发中？ 同源策略是浏览器的核心安全策略，同源策略是防御来自非法的攻击，但我们不能因此就将所有</description>
+    </item>
+    
+  </channel>
+</rss>

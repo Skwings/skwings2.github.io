@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>npm on Skwings Blog</title>
+    <link>https://skwings.github.io/tags/npm/</link>
+    <description>Recent content in npm on Skwings Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://skwings.github.io/tags/npm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>解决npm被墙的问题</title>
+      <link>https://skwings.github.io/post/2019-10-25%E8%A7%A3%E5%86%B3npm%E8%A2%AB%E5%A2%99%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-25%E8%A7%A3%E5%86%B3npm%E8%A2%AB%E5%A2%99%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description>解决npm被墙的问题 npm储存包的服务器在国外，有时候会被墙，速度慢。 为了解决这个问题，淘宝的开发团队在国内做了一个npm的镜像源。http</description>
+    </item>
+    
+  </channel>
+</rss>

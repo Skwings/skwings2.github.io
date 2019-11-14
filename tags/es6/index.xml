@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Es6 on Skwings Blog</title>
+    <link>https://skwings.github.io/tags/es6/</link>
+    <description>Recent content in Es6 on Skwings Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    
+	<atom:link href="https://skwings.github.io/tags/es6/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>学习Promise</title>
+      <link>https://skwings.github.io/post/es6-promise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/es6-promise/</guid>
+      <description>1.函数对象与实例对象 函数对象：当函数作为对象使用时，简称为函数对象。 实例对象：new函数产生的对象，称为实例对象。 function Fn(){ //函数 } const fn = new Fn();</description>
+    </item>
+    
+  </channel>
+</rss>

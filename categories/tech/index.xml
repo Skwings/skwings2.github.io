@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech on Skwings Blog</title>
@@ -6,17 +6,80 @@
     <description>Recent content in Tech on Skwings Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 19 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://skwings.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Js异步编程</title>
+      <link>https://skwings.github.io/post/js%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/js%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</guid>
+      <description>1.1什么叫异步 异步(async)是相对于同步(sync)而言的，很好理解。 同步就是一件事一件事的执行。只有前一个任务执行完毕，才能执行后一</description>
+    </item>
+    
+    <item>
+      <title>正则表达式</title>
+      <link>https://skwings.github.io/post/2019-10-30%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-30%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
+      <description>正则是干什么的？ 正则（regular expression）：RegExp，用来处理字符串的规则。 + 只能处理字符串 + 可以验证字符串是否符合某个</description>
+    </item>
+    
+    <item>
+      <title>越疆笔试题总结</title>
+      <link>https://skwings.github.io/post/2019-10-29%E8%B6%8A%E7%96%86%E7%AC%94%E8%AF%95%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-29%E8%B6%8A%E7%96%86%E7%AC%94%E8%AF%95%E6%80%BB%E7%BB%93/</guid>
+      <description>笔试题 1.Js实现冒泡排序 //冒泡排序 function bubbleSort( arr ){ let len = arr.length; for(let i=0;i&amp;lt;len-1;i++){ for(let j=0;j&amp;lt;len-i-1;j++){ if(arr[j+1]&amp;lt;arr[j]){ let temp; temp=arr[j]; arr[j]=arr[j+1]; a[j+1]=temp; } } } return arr; } var a=[7,8,1,4,6,2,7,3,0,4,6,1]; bubbleSort(a); console.log(a);//[0, 1, 1, 2, 3, 4, 4, 6, 6, 7, 7, 8] 2.如果有一个很大的数，</description>
+    </item>
+    
+    <item>
+      <title>数据结构</title>
+      <link>https://skwings.github.io/post/2019-10-27%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Sun, 27 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-27%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description>数据结构常见面试题 1.数组与链表的区别 1.数组必须实现固定的长度，不能适应数据动态增减的情况。而组成链表的节点个数可以按需求进行增减。 2.数</description>
+    </item>
+    
+    <item>
+      <title>跨域请求的解决方案</title>
+      <link>https://skwings.github.io/post/2019-10-26%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-26%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>跨域（非同源策略请求） 为什么跨域请求会出现在前端开发中？ 同源策略是浏览器的核心安全策略，同源策略是防御来自非法的攻击，但我们不能因此就将所有</description>
+    </item>
+    
+    <item>
+      <title>解决npm被墙的问题</title>
+      <link>https://skwings.github.io/post/2019-10-25%E8%A7%A3%E5%86%B3npm%E8%A2%AB%E5%A2%99%E7%9A%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-25%E8%A7%A3%E5%86%B3npm%E8%A2%AB%E5%A2%99%E7%9A%84%E9%97%AE%E9%A2%98/</guid>
+      <description>解决npm被墙的问题 npm储存包的服务器在国外，有时候会被墙，速度慢。 为了解决这个问题，淘宝的开发团队在国内做了一个npm的镜像源。http</description>
+    </item>
+    
+    <item>
+      <title>函数节流与防抖</title>
+      <link>https://skwings.github.io/post/2019-10-24%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81%E4%B8%8E%E9%98%B2%E6%8A%96/</link>
+      <pubDate>Thu, 24 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/2019-10-24%E5%87%BD%E6%95%B0%E8%8A%82%E6%B5%81%E4%B8%8E%E9%98%B2%E6%8A%96/</guid>
+      <description>函数节流 什么是函数节流？ 大多是指频繁触发的事件，我们希望他隔一段时间执行一次，即我们希望一个函数在一个可以接受的频率重复调用。 函数节流就是针</description>
+    </item>
+    
+    <item>
       <title>Jquery和Vue的技术优劣的对比</title>
-      <link>https://skwings.github.io/post/jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</link>
+      <link>https://skwings.github.io/post/2019-10-19jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</link>
       <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skwings.github.io/post/jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</guid>
+      <guid>https://skwings.github.io/post/2019-10-19jquery%E5%92%8Cvue%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BC%98%E5%8A%A3%E7%9A%84%E5%AF%B9%E6%AF%94/</guid>
       <description>已经9012年了，如果你的公司还在用table+div布局，用jq操作dom，请离职！ 前端技术日新月异，vue所提倡的数据驱动视图和jQue</description>
     </item>
     
@@ -49,19 +112,19 @@
     
     <item>
       <title>函数与变量提升</title>
-      <link>https://skwings.github.io/post/%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</link>
+      <link>https://skwings.github.io/post/2019-10-21%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</link>
       <pubDate>Sun, 13 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skwings.github.io/post/%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</guid>
+      <guid>https://skwings.github.io/post/2019-10-21%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E4%BB%A5%E5%8F%8A%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7/</guid>
       <description>一、变量提升 在ES6之前JavaScipt并没有块级作用域（一个花括号即是一个块级作用域），只有全局作用域与函数作用域。变量提升即将变量声明</description>
     </item>
     
     <item>
       <title>什么是Mvvm</title>
-      <link>https://skwings.github.io/post/%E4%BB%80%E4%B9%88%E6%98%AFmvvm/</link>
+      <link>https://skwings.github.io/post/2019-10-22%E4%BB%80%E4%B9%88%E6%98%AFmvvm/</link>
       <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://skwings.github.io/post/%E4%BB%80%E4%B9%88%E6%98%AFmvvm/</guid>
+      <guid>https://skwings.github.io/post/2019-10-22%E4%BB%80%E4%B9%88%E6%98%AFmvvm/</guid>
       <description>什么是Mvvm Mvvm定义MVVM是Model-View-ViewModel的简写。即模型-视图-视图模型。【模型】指的是后端传递的数据。【</description>
     </item>
     
@@ -81,6 +144,15 @@
       
       <guid>https://skwings.github.io/post/2019-10-11-markdown/</guid>
       <description>Markdown的超简短语法简介 标题 Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有</description>
+    </item>
+    
+    <item>
+      <title>学习Promise</title>
+      <link>https://skwings.github.io/post/es6-promise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://skwings.github.io/post/es6-promise/</guid>
+      <description>1.函数对象与实例对象 函数对象：当函数作为对象使用时，简称为函数对象。 实例对象：new函数产生的对象，称为实例对象。 function Fn(){ //函数 } const fn = new Fn();</description>
     </item>
     
   </channel>
